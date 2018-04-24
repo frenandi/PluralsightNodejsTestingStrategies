@@ -15,9 +15,9 @@ describe("The Review Process", function () {
             weight: 180
         });
         before(function (done) {
-            
+
             var review = new ReviewProcess();
-            var spy = sinon.spy(validApp,"emailIsValid");
+            var spy = sinon.spy(validApp, "emailIsValid");
             review.processApplication(validApp, function (err, result) {
                 decision = result;
                 done();
@@ -27,6 +27,7 @@ describe("The Review Process", function () {
         //Done indicates asynchronous
         it.only("returns success", function () {
             assert(decision.success, decision.message);
+            assert(spy.called);
         });
     });
 });
