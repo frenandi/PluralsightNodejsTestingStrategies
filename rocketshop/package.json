@@ -1,0 +1,22 @@
+{
+  "name": "rocketshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "sinon": "^4.5.0"
+  },
+  "dependencies": {
+    "moment": "^2.22.1"
+  }
+}
